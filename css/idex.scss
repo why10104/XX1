@@ -1,0 +1,299 @@
+@import "com1";
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size:16px;
+}
+body,html{
+  height:100%;
+}
+
+.st1{
+  height:45px;
+  width:100%;
+  input{
+    height:28px;
+    width:44px;
+    border:1px solid #686972;
+    font-size:12px;
+    color:#fff;
+    text-align: center;
+    line-height:28px;
+    margin-right:-5px;
+    margin-top:17px;
+    background: none;
+    &:nth-child(2){
+      border-left:0;
+      border-right:0;
+    }
+  }
+
+}
+
+.box{
+  width: 100%;
+  height:100%;
+  display: flex;
+  background: url("../img/blue.jpg");
+  background-size: cover;
+  .box-left{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    .left-top{
+      height:50px;
+      border-bottom:1px solid #416683;
+      span{
+        float:left;
+        width:45px;
+        height:50px;
+        text-align: center;
+        background:rgba(0,0,0,0.9);
+        line-height: 50px;
+        svg{
+          color:#ffffff;
+        }
+      }
+      a{
+        float:left;
+        width:135px;
+        font-size:16px;
+        height:50px;
+        color:#fff;
+        background:rgba(0,0,0,0.1);
+        line-height:50px;
+      }
+    }
+    .left-bot{
+      flex: 1;
+      width:180px;
+      overflow: hidden;
+      background:rgba(0,0,0,0.1);
+      .left-bot1{
+        width:45px;
+        li{
+          height:42px;
+          &:hover{
+            a{
+              background:rgba(0,0,0,1);
+            }
+          }
+          a{
+            position:relative;
+            display: inline-block;
+            width:45px;
+            background:rgba(0,0,0,0.2);
+            height:42px;
+            img{
+              width:23px;
+              margin:10px auto;
+            }
+            .is2{
+              position:absolute;
+              top:0;
+              left:180px;
+              display: inline-block;
+              width:135px;
+              height:42px;
+              color:#fff;
+              text-indent: 8px;
+              font-size: 12px;
+              background: #0e1521;
+              vertical-align: top;
+              line-height:42px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .box-right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    .box-right-top{
+      height:50px;
+      border-bottom:1px solid #416683;
+      display: flex;
+      .masg{
+        a{
+          display:block;
+          position: relative;
+          height:50px;
+          img{
+            float:left;
+            margin:17px 7px 0 17px;
+          }
+          .s1{
+            position: absolute;
+            left:36px;
+            top:7px;
+            display:block;
+            width:13px;
+            height:17px;
+            line-height:17px;
+            color:#fff;
+            border-radius:2px;
+            text-align: center;
+            background:#ef0101;
+          }
+          .s2{
+            float: left;
+            height:50px;
+            vertical-align:top;
+            font-size:12px ;
+            line-height:50px;
+            color:#fff;
+            padding-right:22px;
+          }
+        }
+      }
+      .warm {
+        @extend .masg;
+        margin-left: 10px;
+        a {
+          .s1 {
+            left: 25px;
+          }
+          .svgs{
+            float:left;
+            width: 10px;
+            height:50px;
+          }
+          svg {
+            font-size: 25px;
+            margin: 12px 7px 0 7px;
+          }
+          .s2{
+            margin-left: 30px;
+          }
+        }
+      }
+      form{
+        margin-left: 30px;
+        display: inline-block;
+        height:50px;
+        .in1{
+          outline: none;
+          border:0px;
+          height:50px;
+          width:40px;
+          background: url("../img/search.png") no-repeat center;
+        }
+        .in2{
+          vertical-align: top;
+          height:50px;
+          min-width: 200px;
+          line-height:50px;
+          font-size: 20px;
+          outline: none;
+          color:#fff;
+          background: none;
+          border:0px;
+        }
+      }
+    }
+    .box1{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .r1top{
+        height:34px;
+        border-bottom:#436883 1px solid;
+        span{
+          float: left;
+          color:#fff;
+          font-size:14px;
+          line-height:42px;
+          text-indent: 15px;
+        }
+        .top-r{
+          float: right;
+          color:#7c8b8e;
+          margin-right:15px;
+          a{
+            display: inline-block;
+            color:#fff;
+            font-size: 14px;
+            line-height:42px;
+            padding: 0 5px;
+            &:hover{
+              color:#ffd600;
+            }
+          }
+          .active{
+            color:#ffd600;
+          }
+        }
+      }
+      .r1bot{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        .right11{
+          .imgss1{
+            display:none;
+            border:1px solid #686972;
+            width: 100%;
+            h5{
+              height:30px;
+              font-size:12px;
+              color:#fefefe;
+              line-height:30px;
+              text-indent:10px;
+            }
+            ul li{
+              width: 100%;
+              height:51px;
+              border-top:1px solid #2e4c5d;
+              display: flex;
+              .img{
+                width:60px;
+                height:50px;
+                img{
+                  width:40px;
+                  margin:5px auto;
+                }
+              }
+              .image{
+                 flex:1;
+                 .pt1{
+                   margin-top:6px;
+                   color:#dadada;
+                   font-size:12px;
+                   line-height:18px;
+                 }
+                .pt1{
+                   color:#fefefe;
+                   font-size:12px;
+                   line-height:18px;
+                 }
+              }
+            }
+            
+          }
+          .imgss2{
+            @extend .imgss1;
+          }
+        }
+        .right12{
+          display: flex;
+          .boxe1{
+            flex: 1;
+            height: 300px;
+            box-sizing: border-box;
+            margin:10px;
+            border:1px solid red;
+            background:rgba(0,0,0,0.3);
+            
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+

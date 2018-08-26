@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* CSS Document */
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, form, hr, fieldset, h1, h2, h3, h4, h5, h6, img, input, figure {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑",Arial;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 16px; }
+
+body, html {
+  height: 100%; }
+
+.st1, .box .box-right .box1 .r1bot .right1 .rbox1 .tfix, .box .box-right .box1 .r1bot .right2 .right2-1 .tfix {
+  height: 45px;
+  width: 100%; }
+  .st1 input, .box .box-right .box1 .r1bot .right1 .rbox1 .tfix input, .box .box-right .box1 .r1bot .right2 .right2-1 .tfix input {
+    height: 28px;
+    width: 44px;
+    border: 1px solid #686972;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    margin-right: -5px;
+    margin-top: 17px;
+    background: none; }
+    .st1 input:nth-child(2), .box .box-right .box1 .r1bot .right1 .rbox1 .tfix input:nth-child(2), .box .box-right .box1 .r1bot .right2 .right2-1 .tfix input:nth-child(2) {
+      border-left: 0;
+      border-right: 0; }
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: url("../img/blue.jpg");
+  background-size: cover; }
+  .box .box-left {
+    width: 180px;
+    display: flex;
+    flex-direction: column; }
+    .box .box-left .left-top {
+      height: 50px;
+      border-bottom: 1px solid #416683; }
+      .box .box-left .left-top span {
+        float: left;
+        width: 45px;
+        height: 50px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        line-height: 50px; }
+        .box .box-left .left-top span svg {
+          color: #ffffff; }
+      .box .box-left .left-top a {
+        float: left;
+        width: 135px;
+        font-size: 16px;
+        height: 50px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.1);
+        line-height: 50px; }
+    .box .box-left .left-bot {
+      flex: 1;
+      width: 180px;
+      background: rgba(0, 0, 0, 0.5); }
+      .box .box-left .left-bot li {
+        padding-left: 30px;
+        height: 42px;
+        color: #91959b; }
+        .box .box-left .left-bot li:hover {
+          background: #010102;
+          color: #fff; }
+        .box .box-left .left-bot li svg {
+          font-size: 14px;
+          font-weight: 600; }
+        .box .box-left .left-bot li .left1 {
+          font-size: 12px;
+          margin-left: 5px;
+          font-weight: 600; }
+  .box .box-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .box .box-right .box-right-top {
+      height: 50px;
+      border-bottom: 1px solid #416683;
+      display: flex; }
+      .box .box-right .box-right-top .masg a, .box .box-right .box-right-top .warm a {
+        display: block;
+        position: relative;
+        height: 50px; }
+        .box .box-right .box-right-top .masg a img, .box .box-right .box-right-top .warm a img {
+          float: left;
+          margin: 17px 7px 0 17px; }
+        .box .box-right .box-right-top .masg a .s1, .box .box-right .box-right-top .warm a .s1 {
+          position: absolute;
+          left: 36px;
+          top: 7px;
+          display: block;
+          width: 13px;
+          height: 17px;
+          line-height: 17px;
+          color: #fff;
+          border-radius: 2px;
+          text-align: center;
+          background: #ef0101; }
+        .box .box-right .box-right-top .masg a .s2, .box .box-right .box-right-top .warm a .s2 {
+          float: left;
+          height: 50px;
+          vertical-align: top;
+          font-size: 12px;
+          line-height: 50px;
+          color: #fff;
+          padding-right: 22px; }
+      .box .box-right .box-right-top .warm {
+        margin-left: 10px; }
+        .box .box-right .box-right-top .warm a .s1 {
+          left: 25px; }
+        .box .box-right .box-right-top .warm a .svgs {
+          float: left;
+          width: 10px;
+          height: 50px; }
+        .box .box-right .box-right-top .warm a svg {
+          font-size: 25px;
+          margin: 12px 7px 0 7px; }
+        .box .box-right .box-right-top .warm a .s2 {
+          margin-left: 30px; }
+      .box .box-right .box-right-top form {
+        margin-left: 30px;
+        display: inline-block;
+        height: 50px; }
+        .box .box-right .box-right-top form .in1 {
+          outline: none;
+          border: 0px;
+          height: 50px;
+          width: 40px;
+          background: url("../img/search.png") no-repeat center; }
+        .box .box-right .box-right-top form .in2 {
+          vertical-align: top;
+          height: 50px;
+          min-width: 200px;
+          line-height: 50px;
+          font-size: 20px;
+          outline: none;
+          color: #fff;
+          background: none;
+          border: 0px; }
+    .box .box-right .box1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column; }
+      .box .box-right .box1 .r1top {
+        height: 34px;
+        border-bottom: #436883 1px solid; }
+        .box .box-right .box1 .r1top span {
+          float: left;
+          color: #fff;
+          font-size: 14px;
+          line-height: 42px;
+          text-indent: 15px; }
+        .box .box-right .box1 .r1top .top-r {
+          float: right;
+          color: #7c8b8e;
+          margin-right: 15px; }
+          .box .box-right .box1 .r1top .top-r a {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            line-height: 42px;
+            padding: 0 5px; }
+            .box .box-right .box1 .r1top .top-r a:hover {
+              color: #ffd600; }
+          .box .box-right .box1 .r1top .top-r .active {
+            color: #ffd600; }
+      .box .box-right .box1 .r1bot {
+        flex: 1;
+        display: flex; }
+        .box .box-right .box1 .r1bot .right1 {
+          color: #fff;
+          flex: 1; }
+          .box .box-right .box1 .r1bot .right1 .rbox1 {
+            background: rgba(0, 0, 0, 0.2);
+            margin: 15px 7px 0 15px; }
+            .box .box-right .box1 .r1bot .right1 .rbox1 .tab {
+              background: rgba(0, 0, 0, 0.3); }
+              .box .box-right .box1 .r1bot .right1 .rbox1 .tab caption {
+                text-align: left;
+                text-indent: 10px;
+                height: 28px;
+                font-size: 12px;
+                line-height: 28px; }
+              .box .box-right .box1 .r1bot .right1 .rbox1 .tab thead {
+                background: rgba(0, 0, 0, 0.3); }
+                .box .box-right .box1 .r1bot .right1 .rbox1 .tab thead tr {
+                  height: 31px;
+                  border-bottom: 1px solid #7c8b8e; }
+                  .box .box-right .box1 .r1bot .right1 .rbox1 .tab thead tr th {
+                    font-size: 12px;
+                    text-align: left;
+                    text-indent: 8px; }
+              .box .box-right .box1 .r1bot .right1 .rbox1 .tab tbody tr {
+                height: 36px;
+                border-bottom: 1px solid #7c8b8e; }
+                .box .box-right .box1 .r1bot .right1 .rbox1 .tab tbody tr td {
+                  font-size: 12px;
+                  text-align: left;
+                  text-indent: 8px; }
+        .box .box-right .box1 .r1bot .right2 {
+          flex: 1; }
+          .box .box-right .box1 .r1bot .right2 .right2-1 {
+            color: #fff;
+            margin: 15px 15px 0px 7px;
+            background: rgba(0, 0, 0, 0.5);
+            display: none; }
+            .box .box-right .box1 .r1bot .right2 .right2-1 h5 {
+              font-size: 12px;
+              text-indent: 10px;
+              line-height: 28px; }
+            .box .box-right .box1 .r1bot .right2 .right2-1 p {
+              background: rgba(0, 0, 0, 0.3); }
+              .box .box-right .box1 .r1bot .right2 .right2-1 p .sleft1 {
+                display: inline-block;
+                width: 35%;
+                text-indent: 8px;
+                height: 31px;
+                font-size: 12px;
+                line-height: 31px; }
+                .box .box-right .box1 .r1bot .right2 .right2-1 p .sleft1:last-child {
+                  width: 65%; }
+            .box .box-right .box1 .r1bot .right2 .right2-1 ul li {
+              border-bottom: 1px solid #2e4f43;
+              height: 36px; }
+              .box .box-right .box1 .r1bot .right2 .right2-1 ul li .intt1 {
+                display: inline-block;
+                width: 63%;
+                text-indent: 8px;
+                border: 0;
+                outline: none;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                font-size: 12px;
+                background: none; }
+              .box .box-right .box1 .r1bot .right2 .right2-1 ul li .sleft {
+                display: inline-block;
+                width: 35%;
+                text-indent: 8px;
+                height: 36px;
+                font-size: 12px;
+                line-height: 36px; }
+            .box .box-right .box1 .r1bot .right2 .right2-1 .tfix input:nth-child(2) {
+              border-right: 1px solid #686972; }
+          .box .box-right .box1 .r1bot .right2 .active {
+            display: block; }
+
+/*# sourceMappingURL=users.css.map */

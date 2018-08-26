@@ -3,8 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <title>用户管理</title>
+    <script src="//at.alicdn.com/t/font_795429_2x0cw3t17xh.js"></script>
+    <link rel="stylesheet" href="css/users.css">
+    <script src="js/jquery.1.8.3.js"></script>
+    <script src="js/users.js"></script>
 </head>
+  <!--小图标-->
+    <!--<svg class="icon" aria-hidden="true"><use xlink:href="#icon-xxx"></use></svg>-->
 <body>
-
+  <div class="box">
+      <div class="box-left">
+          <div class="left-top">
+              <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xiangmu"></use></svg></span>
+              <a href="#">移动能效管理平台</a>
+          </div>
+          <ul class="left-bot">
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xitonggongjuxiang"></use></svg><span class="left1">运行监测</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shuju"></use></svg><span class="left1">KPI</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shuju1"></use></svg><span class="left1">全息图概览</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shujuquxian"></use></svg><span class="left1">能耗系统</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-jiaofeiguanli"></use></svg><span class="left1">电费管理</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gongju"></use></svg><span class="left1">设备管理</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-baobiao"></use></svg><span class="left1">报表管理</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yonghuguanli"></use></svg><span class="left1">用户管理</span></li>
+              <li><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xitong"></use></svg><span class="left1">系统管理</span></li>
+          </ul>
+      </div>
+      <div class="box-right">
+          <div class="box-right-top">
+              <div class="masg">
+                  <a class="a1" href="#"><img src="img/message.png" alt=""><span class="s1">5</span><span class="s2">实时消息</span></a>
+              </div>
+              <div class="warm">
+                  <a class="a1" href="#"><span class="svgs"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-yiyuchuqudongjibolishangdebingshuangxue"></use></svg></span><span class="s1">5</span><span class="s2">警告消息</span></a>
+              </div>
+              <form action="">
+                  <input class="in1" type="button" value=''>
+                  <input class="in2" type="text">
+              </form>
+          </div>
+          <div class="box1">
+              <div class="r1top">
+                  <span>用户管理</span>
+                  <div class="top-r">
+                      <a href="#">主页</a> /
+                      <a href="#">管理</a>  /
+                      <a href="#" class="active">用户管理</a>
+                  </div>
+              </div>
+              <div class="r1bot">
+                  <div class="right1">
+                      <div class="rbox1">
+                          <table class="tab" width="100%" cellpadding="0" cellspacing="0" rules="groups">
+                              <caption>所有信息</caption>
+                              <thead>
+                                  <tr height="30" width="100%">
+                                      <th width="14%">序号</th>
+                                      <th width="20%">用户名</th>
+                                      <th width="18%">姓名</th>
+                                      <th width="22%">所属公司</th>
+                                      <th width="26%">角色</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td class="td">1</td>
+                                      <td>Jhon</td>
+                                      <td>张三</td>
+                                      <td>青海移动</td>
+                                      <td>班长</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="td">2</td>
+                                      <td>Admin</td>
+                                      <td>李四</td>
+                                      <td>青海移动</td>
+                                      <td>系统管理员</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="td">3</td>
+                                      <td>Super</td>
+                                      <td>王丽丽</td>
+                                      <td>青海移动</td>
+                                      <td>超级用户</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="td">4</td>
+                                      <td>duoduo</td>
+                                      <td>钱多多</td>
+                                      <td>山东移动</td>
+                                      <td>普通用户</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="td">5</td>
+                                      <td>super</td>
+                                      <td>小红</td>
+                                      <td>山东移动</td>
+                                      <td>普通用户</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                          <div class="tfix">
+                              <input class="int1" type="button"  value="新增"  />
+                              <input class="int2" type="button"  value="修改"  />
+                              <input class="int3" type="button"  value="删除"  />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="right2">
+                      <div class="right2-1 rig1 ">
+                           <form action="">
+                               <h5>用户信息</h5>
+                               <p><span class="sleft1">属性名</span><span class="sleft1">属性值</span></p>
+                               <ul>
+                                   <li><span class="sleft">用户名</span><input class="intt1" id="personId" type="text" /><br/></li>
+                                   <li><span class="sleft">姓名</span><input class="intt1" id="personname" type="text" /><br/></li>
+                                   <li><span class="sleft">所属公司</span><input class="intt1" id="commay" type="text" /><br/></li>
+                                   <li><span class="sleft">角色</span><input class="intt1" id="companys" type="text" /><br/></li>
+                                   <li><span class="sleft">邮箱</span><input class="intt1" id="emails" type="text" /><br/></li>
+                                   <li><span class="sleft">移动电话</span><input class="intt1" id="mobhone" type="text" /><br/></li>
+                                   <li><span class="sleft">办公电话</span><input class="intt1" id="offciphone" type="text" /><br/></li>
+                                   <li><span class="sleft">家庭电话</span><input class="intt1" id="homehone" type="text" /><br/></li>
+                                   <li><span class="sleft">职务</span><input class="intt1" id="post" type="text" /><br/></li>
+                                   <li><span class="sleft">级别</span><input class="intt1" id="level" type="text" /><br/></li>
+                               </ul>
+                           </form>
+                       </div>
+                      <div class="right2-1 rig2 ">
+                           <form action="">
+                               <h5>用户信息</h5>
+                               <p><span class="sleft1">属性名</span><span class="sleft1">属性值</span></p>
+                               <ul>
+                                   <li><span class="sleft">用户名</span><input class="intt1" id="tpersonId" type="text" /><br/></li>
+                                   <li><span class="sleft">姓名</span><input class="intt1" id="tpersonname" type="text" /><br/></li>
+                                   <li><span class="sleft">所属公司</span><input class="intt1" id="tcommay" type="text" /><br/></li>
+                                   <li><span class="sleft">角色</span><input class="intt1" id="tcompanys" type="text" /><br/></li>
+                                   <li><span class="sleft">邮箱</span><input class="intt1" id="temails" type="text" /><br/></li>
+                                   <li><span class="sleft">移动电话</span><input class="intt1" id="tmobhone" type="text" /><br/></li>
+                                   <li><span class="sleft">办公电话</span><input class="intt1" id="toffciphone" type="text" /><br/></li>
+                                   <li><span class="sleft">家庭电话</span><input class="intt1" id="thomehone" type="text" /><br/></li>
+                                   <li><span class="sleft">职务</span><input class="intt1" id="tpost" type="text" /><br/></li>
+                                   <li><span class="sleft">级别</span><input class="intt1" id="tlevel" type="text" /><br/></li>
+                               </ul>
+                               <div class="tfix">
+                                   <input class="int11" type="button"  value="提交"  />
+                                   <input class="int3" type="button"  value="删除"  />
+                               </div>
+                           </form>
+                       </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
