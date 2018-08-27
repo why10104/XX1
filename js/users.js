@@ -18,11 +18,22 @@ $(function(){
 //    删除tr
     $('tbody tr').click(function(){
         //增加人员
+        // $(this).siblings();
+        var n21 = $(this).children('td:eq(1)');
+        var n22 = $(this).children('td:eq(2)');
+        var n23 = $(this).children('td:eq(3)');
+        var n24 = $(this).children('td:eq(4)');
+        // console.log($(this).children('td').get(4));
+
         $(this).siblings().removeClass('delete');
         $(this).siblings().css("background","none");
         $(this).css("background","rgba(0,0,0,0.5)");
         $(this).addClass("delete");
         $('.rig1').addClass("active");
+        $('#personId').val($(n21).text());
+        $('#personname').val($(n22).text());
+        $('#commay').val($(n23).text());
+        $('#companys').val($(n24).text());
         $('.rig2').removeClass("active");
         $('.int3').click(function(){
             //删除行
@@ -35,8 +46,26 @@ $(function(){
             $('.rig2').removeClass("active");
         });
         $('.int2').click(function(){
+            // $('.rig2 ul li input').val('');
             $('.rig2').addClass("active");
+            $('#tpersonId').val($(n21).text());
+            $('#tpersonname').val($(n22).text());
+            $('#tcommay').val($(n23).text());
+            $('#tcompanys').val($(n24).text());
             $('.rig1').removeClass("active");
+            $('.int11').click(function(){
+                
+                var n1= $('#tpersonId').val();
+                var n2= $('#tpersonname').val();
+                var n3= $('#tcommay').val();
+                var n4= $('#tcompanys').val();
+                 $(n21).text(n1);
+                 $(n22).text(n2);
+                 $(n23).text(n3);
+                 $(n24).text(n4);
+                $('.rig2').removeClass("active");
+            });
+
         });
     });
 
